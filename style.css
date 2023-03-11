@@ -1,0 +1,362 @@
+:root{
+    --main-radius:var(--main-radius):2px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    background-color: #66347F;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 0.01fr 1fr 3.5fr 4.5fr 4.5fr 2.3fr 1fr 1fr 0.3fr;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "sidebar main main main main"
+    "paper paper paper paper paper"
+    "paper1 paper1 paper1 paper1 paper1"
+    "experience experience experience work work"
+    "hobbies hobbies hobbies hobbies hobbies"
+    "gallery gallery gallery gallery gallery "
+    "image1 image2 image3 image4 image5"
+    "blog blog blog blog blog" 
+    "blog1 blog1 blog2 blog2 blog3"
+    "footer footer footer footer footer"
+    ;
+}
+
+nav{
+    background-color: #7B8FA1;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: nav;
+    margin-top: -8px;
+    padding-bottom: 5px;
+    padding-top: -5px;
+}
+nav a{
+    color: #000000;
+    float: left;
+    display: flex;
+    padding-right: 3%;
+    padding-left: 4%;
+    padding-bottom: 5px;
+    margin:auto;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#menu-items li{
+    list-style-type: none;
+    
+}
+
+nav>label, nav>input{
+    display: none;
+}
+
+main{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: main;
+}
+
+#sidebar{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: sidebar;
+    
+}
+
+#sidebar img{
+    display: flex;
+    float: left;
+    height:98%;
+    width: 97.5%;
+    padding: 5px 10px 5px 5px;
+    margin-top: -px;
+}
+
+
+
+h3{
+    text-align: center;
+}
+
+p{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-justify:auto;
+}
+
+#paper{
+    background-color: #BDCDD6;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: paper;
+}
+
+
+#paper1{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: paper1;
+
+}
+
+#experience{
+    background-color: #86A3B8;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: experience;
+}
+
+#experience li{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#work{
+    background-color:#86A3B8;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: work; 
+}
+
+#work li{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+#hobbies{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: hobbies;
+}
+
+#hobbies {
+    text-align: center;
+  padding-bottom: 10px;
+}
+#gallery{
+    background-color: #BDCDD6;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: gallery;
+
+}
+
+
+#image1{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: image1;
+}
+
+#image1 img{
+    height:70%;
+    width: 70%;
+    padding: 50px 10px 10px 35px;
+}
+#image2{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: image2;
+
+}
+
+#image2 img{
+    height:70%;
+    width: 70%;
+    padding: 50px 10px 10px 35px;
+}
+#image3{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: image3;
+
+}
+
+#image3 img{
+    height:70%;
+    width: 70%;
+    padding: 50px 10px 10px 35px;
+}
+
+#image4{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: image4;
+
+}
+
+#image4 img{
+    height:70%;
+    width: 70%;
+    padding: 50px 10px 10px 35px;
+}
+
+#image5{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: image5;
+
+}
+
+#image5 img{
+    height:70%;
+    width: 70%;
+    padding: 50px 10px 10px 35px;
+}
+
+#blog{
+    background-color: #BDCDD6;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: blog;
+    margin-bottom: 2px;
+}
+
+#blog1{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: blog1;
+}
+#blog1 img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+#blog2{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: blog2;
+}
+
+#blog2 img {
+    height: 250px;
+    width: 250px;
+    
+    margin-bottom: 5px;
+    
+   
+}
+
+#blog3{
+    background-color: #ECF2FF;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: blog3;
+}
+
+#blog3 img {
+    height: 250px;
+    width: 250px;
+    margin-right:3px;
+    margin-bottom: 5px;
+   
+}
+.logo{
+    margin-top: 5px;
+    height:190px;
+    width:170px;
+    
+    margin-left: 30px;
+   
+
+}
+#paper1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: #7B8FA1;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: footer;
+    text-align: center;
+    font-size: x-small;
+}
+
+
+@media only screen and (max-width:500px){
+    nav{
+        /* text-align: center; */
+    }
+
+    nav > label{
+        font-size: 22px;
+        display: block;
+    }
+    nav>input{
+        display: none;
+    }
+
+    #toggle:checked + #menu-items{
+        display: block;
+        width: 100%;
+    }
+    #menu-items{
+        display: none;
+    }
+
+    #menu-items li a{
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 100%;
+    }
+
+    #menu-items li{
+        list-style-type: none;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 5.5fr 3.5fr 0.2fr 5fr 5fr 5fr 5fr 5fr 3.5fr 3.5fr 5fr  5fr 5fr 5fr 5fr 3fr 5fr 3fr 0.3fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "paper"
+        "paper1"
+        "experience"
+        "work"
+        "hobbies"
+        "gallery"
+        "image1"
+        "image2"
+        "image3"
+        "image4"
+        "image5"
+        "blog"
+        "blog1"
+        "blog2"
+        "blog3"
+        "footer"
+         ;
+    }
+}
