@@ -14,7 +14,7 @@ fetch('https://upadhayay.github.io/db.json')
       response.json().then(function(url) {
         console.log(url)
         console.log(url.books[0].title)
-        const  test=["vol1.png","vol2.png","vol3.png","vol4.png","vol5.png"]
+        const  test=["./images/vol1.png","./images/vol2.png","./images/vol3.png","./images/vol4.png","./images/vol5.png"]
         const link=["https://riskservices.com/the-universe-and-dr-einstein-by-barnett-1948/","https://en.wikipedia.org/wiki/Political_views_of_Albert_Einstein","https://physicstoday.scitation.org/doi/10.1063/1.2117822","https://www.scribd.com/book/344419660/Einstein-on-Peace","https://pdfgoes.com/download/1017002-Einstein%20The%20Life%20And%20Times.pdf"]
         for(let i=0;i<url.books.length; i++){
             const elmt=document.createElement("div");
